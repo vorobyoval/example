@@ -1,0 +1,53 @@
+@mixin flex{
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin flex-flow-column{
+  flex-flow: column;
+  -webkit-flex-flow: column;
+}
+@mixin flex-flow-row-wrap{
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+}
+@mixin flex-flow-row-nowrap{
+  flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+}
+@mixin justify-content-flex-start{
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+}
+@mixin justify-content-space-around{
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+
+@mixin margin($margin-top,$margin-right,$margin-bottom,$margin-left){
+  margin-top: $margin-top;
+  margin-right: $margin-right;
+  margin-bottom: $margin-bottom;
+  margin-left: $margin-left;
+}
+@mixin wrapper($width,$padding-bottom,$position,$justify-content){/*for small square wrapper*/
+  width: $width;
+  padding-bottom: $padding-bottom;
+  position: $position;
+  justify-content: $justify-content;
+  overflow: hidden;
+  height: 0;
+
+}
+@mixin inner ($position,$top,$left, $min-height,$min-width ){
+  position: $position;
+  top:$top;
+  left:$left;
+  min-height: $min-height;
+  min-width: $min-width;
+}
+@mixin grid{
+  display: grid;
+  display: -ms-grid;
+}
+
+

@@ -1,0 +1,61 @@
+.row2 {
+  @include flex;
+  @include flex-flow-row-nowrap;
+  @include justify-content-flex-start;
+  width: 100%;
+}
+.row2_brandaloka_wrapper {
+  @include flex;
+  @include flex-flow-row-nowrap;
+  @include wrapper(calc(49.38% + 1px), 16.46%, relative, center);
+}
+.brandaloka_text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: auto;
+
+}
+.brandaloka_text_wrapper{
+  @include flex;
+  @include wrapper(100%, 41.6667%, relative, flex-start);/*41.667 это высота от ширины контейнера брандалока текс, если принять ее за 100%*/
+
+}
+
+.brandaloka_text_inner{
+  position: absolute;
+  top:35%;
+  left:0;
+  width:100%;
+  height: 41.6667%;
+}
+.brandaloka_text_inner p{
+  margin: 0;
+
+}
+.brandaloka_point {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 41.6667%;
+  margin-top: 20.5%;
+  margin-right: 10%;
+}
+.brandaloka_point_wrapper {
+  @include flex;
+  @include wrapper(100%, 41.6667%, relative, flex-end);
+}
+  .brandaloka_point_inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 21.8%;
+    height: 48%;
+    background-color: deeppink;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+
+

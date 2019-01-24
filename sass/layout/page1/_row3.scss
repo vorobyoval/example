@@ -1,0 +1,34 @@
+.row3 {
+  @include flex;
+  @include flex-flow-row-nowrap;
+  @include justify-content-flex-start;
+  width: 100%;
+}
+.row3 .our_team{
+  margin-left: 15.83%;
+  margin-right: calc(0.63% - 2px);
+}
+.full_picture{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: rotate(45deg) scale(1.42);
+  -webkit-transform: rotate(45deg) scale(1.42);
+  border: none;
+  margin:0;
+  padding:0;
+}
+.row3_bottom-line_wrapper {
+  @include flex;
+  @include wrapper(10.97%,calc(16.46% + 1px), relative, center);
+  border-bottom: inset 1px white;
+  margin-left: 0;
+}
+.row3_right-line_wrapper {
+  @include flex;
+  @include wrapper(calc(21.32% + 0.63% + 0.63% + 1px),16.46%, relative, center);/*16.46-10.97+16.46-0.63*/
+  border-right: inset 1px white;
+  margin-left: 0;
+}

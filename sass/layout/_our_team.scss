@@ -1,0 +1,529 @@
+.our_team_main{
+  @include grid;
+  /*height: auto;*/
+  width: 100%;
+  background-color: #ffffff;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto auto;
+  margin: 0;
+  padding: 0;
+}
+
+.first_title {
+  grid-column: 1/2;
+  grid-row: 1;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: auto;
+}
+.second_title{
+  grid-column: 2/3;
+  grid-row: 1;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: auto;
+}
+.third_title{
+  grid-column: 3/4;
+  grid-row: 1;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  height: auto;
+}
+.fourth_title{
+  grid-column: 4/5;
+  grid-row: 1;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: auto;
+}
+.main_title{
+  grid-column: 1/5;
+  grid-row: 2/3;
+  /*margin-top: 10.57%;
+  margin-bottom: 11.23%;*/
+  justify-self: center;
+}
+.first_photo{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  @include flex;
+  @include flex-flow-column;
+  justify-content: center;
+}
+.second_photo{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  @include flex;
+  @include flex-flow-column;
+  justify-content: center;
+}
+.third_photo{
+  grid-column: 3/4;
+  grid-row: 3/4;
+  @include flex;
+  @include flex-flow-column;
+  justify-content: center;
+}
+.fourth_photo{
+  grid-column: 4/5;
+  grid-row: 3/4;
+  @include flex;
+  @include flex-flow-column;
+  justify-content: center;
+}
+.our_team_main_photo_wrapper{
+  @include flex;
+  justify-content: center;
+  width: 94.22%;
+  position: relative;
+  padding-bottom: 94.22%;
+  height: 0;
+  overflow: hidden;
+
+    img{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+}
+.position{
+  margin-top: 16.5%;
+  text-align: center;
+  margin-bottom: 42.9%;
+}
+/*Latest projects*/
+.last_posts{
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: auto auto auto;
+  /*min-height: 100vh;*/
+  width: 100%;
+  background-color: #eeeeee;
+  margin: 0;
+  padding: 0;
+}
+.last_posts_title{
+  text-align: center;
+  grid-column: 1/4;
+  grid-row: 1;
+  margin:0;
+  padding: 0;
+
+
+    p{
+      margin-top: 9%;
+      margin-bottom: 7.7%;
+    }
+}
+.last_posts_first_picture{
+  grid-column: 1/2;
+  grid-row: 2;
+  @include flex;
+  @include flex-flow-column;
+  justify-content: center;
+  margin-right: 1.1%;
+
+    .last_posts_photo{
+      width: 100%;
+      position: relative;
+      padding-bottom: 69.7%;
+      height: 0;
+      overflow: hidden;
+      @include flex;
+      justify-content: center;
+
+        img{
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 0;
+        }
+    }
+
+}
+.last_posts_second_picture{
+  grid-column: 2/3;
+  grid-row: 2;
+  @include flex;
+  @include flex-flow-column;
+  justify-content: center;
+  margin-left: 1.1%;
+  margin-right: 1.1%;
+  .last_posts_photo2{
+    width: 100%;
+    position: relative;
+    padding-bottom: 69.7%;
+    height: 0;
+    overflow: hidden;
+    @include flex;
+    justify-content: center;
+
+    img{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+
+}
+.last_posts_third_picture{
+  grid-column: 3/4;
+  grid-row: 2;
+  @include flex;
+  @include flex-flow-column;
+  justify-content: center;
+  margin-left: 1.1%;
+  .last_posts_photo3{
+    width: 100%;
+    position: relative;
+    padding-bottom: 69.7%;
+    height: 0;
+    overflow: hidden;
+    @include flex;
+    justify-content: center;
+
+    img{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+.last_posts_text{
+  padding: 14% 3% 10% 3%;
+  background-color: #ffffff;
+}
+.our_team_button{
+  grid-column: 1/4;
+  grid-row: 3;
+  background-color: deeppink;
+  text-align: center;
+  width: 19.51%;
+  padding: 1vw 0.5vw;
+  margin-top: 6%;
+  margin-bottom: 12%;
+  vertical-align: center;
+  margin-left: 40%;
+    a{
+      text-decoration: none;
+      vertical-align: center;
+    }
+
+}
+/*our skills part*/
+.our_skills{
+  @include grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: auto auto;
+  width: 100%;
+}
+.our_skills_title{
+  grid-column: 1/6;
+  grid-row: 1;
+  text-align: center;
+  vertical-align: middle;
+
+    p{
+      margin-top: 9.4%;
+      margin-bottom: 10.34673%;
+    }
+}
+.first_circle{
+  grid-column: 1/2;
+  grid-row: 2;
+}
+.second_circle{
+  grid-column: 2/3;
+  grid-row: 2;
+}
+.third_circle{
+  grid-column: 3/4;
+  grid-row: 2;
+}
+.fourth_circle{
+  grid-column: 4/5;
+  grid-row: 2;
+}
+.fifth_circle{
+  grid-column: 5/6;
+  grid-row: 2;
+}
+.circle{
+  @include flex;
+  @include flex-flow-column;
+  justify-content: center;
+}
+.figure_circle{
+  width: 81.18%;
+  padding-bottom: 81.18%;
+  border-radius: 50%;
+  border: deeppink 2px inset;
+  position: relative;
+  @include flex;
+  justify-content: center;
+  height: 0;
+  overflow: hidden;
+
+    p{
+      position: absolute;
+      top: 24%;
+      left: 37%;
+    }
+}
+.figure_circle_text{
+  padding-top: 4.95%;
+  margin-left: 10%;
+  margin-right: auto;
+}
+/*our latest projects*/
+.our_last_projects{
+  @include grid;
+  margin-top: 16.91vh;
+  grid-template-columns: 14.285714286vw 14.285714286vw 14.285714286vw 14.285714286vw 14.285714286vw 14.285714286vw 14.285714286vw;
+  grid-template-rows: auto auto auto;
+  width: 100vw;
+  margin-left: -30%;
+}
+.our_latest_project_title{
+  grid-column: 1/8;
+  grid-row: 1/2;
+  text-align: center;
+    p{
+      margin-bottom: 6.865787vh;
+    }
+}
+.our_latest_project_picture1{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  position: relative;
+    img{
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+
+    }
+}
+.our_latest_project_picture2{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  position: relative;
+  img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+
+  }
+}
+.our_latest_project_picture3{
+  grid-column: 3/4;
+  grid-row: 2/3;
+  position: relative;
+  img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+
+  }
+}
+.our_latest_project_picture4{
+  grid-column: 4/5;
+  grid-row: 2/3;
+  position: relative;
+  img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+
+  }
+}
+.our_latest_project_picture5{
+  grid-column: 5/6;
+  grid-row: 2/3;
+  position: relative;
+  img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+
+  }
+}
+.our_latest_project_picture6{
+  grid-column: 6/7;
+  grid-row: 2/3;
+  position: relative;
+  img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+
+  }
+}
+.our_latest_project_picture7{
+  grid-column: 7/8;
+  grid-row: 2/3;
+  position: relative;
+  img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+
+  }
+}
+.our_latest_project_picture21{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  position: relative;
+  img{
+    position: absolute;
+    top: 15vw;
+    left:0;
+    width: 100%;
+
+  }
+}
+.our_latest_project_picture22{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  position: relative;
+  img{
+    position: absolute;
+    top:15vw;
+    left:0;
+    width: 100%;
+
+  }
+}
+.our_latest_project_picture23{
+  grid-column: 3/4;
+  grid-row: 3/4;
+  position: relative;
+  img{
+    position: absolute;
+    top:15vw;
+    left:0;
+    width: 100%;
+
+  }
+}
+.our_latest_project_picture24{
+  grid-column: 4/5;
+  grid-row: 3/4;
+  position: relative;
+  img{
+    position: absolute;
+    top:15vw;
+    left:0;
+    width: 100%;
+
+  }
+}
+.our_latest_project_picture25{
+  grid-column: 5/6;
+  grid-row: 3/4;
+  position: relative;
+  img{
+    position: absolute;
+    top:15vw;
+    left:0;
+    width: 100%;
+
+  }
+}
+.our_latest_project_picture26{
+  grid-column: 6/7;
+  grid-row: 3/4;
+  position: relative;
+  img{
+    position: absolute;
+    top:15vw;
+    left:0;
+    width: 100%;
+
+  }
+}
+.our_latest_project_picture27{
+  grid-column: 7/8;
+  grid-row: 3/4;
+  position: relative;
+  img{
+    position: absolute;
+    top:15vw;
+    left:0;
+    width: 100%;
+
+  }
+}
+.our_team_footer{
+  margin-top: 32vw;
+  margin-left: -28%;
+  @include flex;
+  @include flex-flow-row-nowrap;
+
+  .menu{
+    @include flex;
+    @include flex-flow-row-nowrap;
+    @include justify-content-flex-start;
+    padding: 1rem;
+
+
+    .fas{
+      margin-right: 10%;
+    }
+
+  }
+  .menu>div{
+    position: relative;
+  }
+  .dropdown_menu{
+    @include flex;
+    @include flex-flow-row-nowrap;
+    @include justify-content-space-around;
+    max-width: 80vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    div{
+      width: 12vw;
+      margin-right: 1rem;
+      text-align: center;
+      a{
+        text-align: center;
+      }
+    }
+
+
+
+    a {
+      text-decoration: none;
+      padding: 1rem;
+    }
+
+  }
+  .dropdown_menu{
+    display: none;
+  }
+  .menu:hover>.dropdown_menu{
+    display: flex;
+  }
+}
+
+
+

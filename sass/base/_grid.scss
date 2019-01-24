@@ -1,0 +1,99 @@
+
+/*main_page*/
+ .main, .main2{
+  height:100%;
+  box-sizing: border-box;
+  background-image: url("../image/first_page/fon.png");
+  background-size: cover;
+  font-family: "Times New Roman","Times", serif;
+  font-size: 62.6%;
+  overflow: hidden;
+  }
+ .main2{
+  width: 100%;
+}
+.wrapper{
+  @include margin(5%,18.07%,auto,18.07%);
+  height: auto;
+  width: 62.6%;
+  max-width: 1454px;
+  @include flex;
+  @include flex-flow-column;
+  flex: 1;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      @media all and (max-width: 900px){
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 10%;
+      margin-bottom: auto;
+      }
+}
+/*What_we_do page*/
+#wwd,#abus,#serv,#f1{
+  height:100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#wwd2, #serv2, #f2{
+  height:100%;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.wrapper_what_we_do, .wrapper_about_us, .wrapper_services, .wrapper_phones, .form_wrapper{
+  /*@include margin(calc(-1.9% + 12.056%),18.07%,0,18.07%);/*margin-top вначале до верха подобрала значение, затем
+   дописала то, что нужно по расчетам*/
+  @include flex;
+  @include flex-flow-column;
+  max-width: 1454px;
+  min-height: 100%;
+  font-family: "MyriadProRegular", Arial, sans-serif;
+}
+/*About_us_page* - look What_we_do page*/
+#abus2 {
+  height:100%;
+  background-color: #eeeeee;
+  width: 100%;
+}
+/*services page-look What_we_do page*/
+/*phone page*/
+#ph1{
+  height:100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*background-image: url("../image/phone/base.png");
+  background-size: cover !important;*/
+  
+}
+#ph2{
+  height:100%;
+  /*background-image: url("../image/phone/base.png");
+  background-size: cover;*/
+  background-image: url("../image/phohe/base.png");
+  background-size: cover;
+  width: 100%;
+}
+/*our_team page*/
+#ot{
+  height:100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#ot2{
+  height: 100%;
+  width: 100%;
+}
+.our_team_main_wrapper{
+  padding-top: 6.27%;
+  margin-left: 18.7%;
+  margin-right: 18.7%;
+  @include flex;
+  @include flex-flow-column;
+  max-width: 1454px;
+  font-family: "MyriadProRegular", Arial, sans-serif;
+}
+/*form page - look what_we_do page*/

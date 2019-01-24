@@ -1,1 +1,1 @@
-# example
+# The example created with using Sass. 

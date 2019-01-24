@@ -1,0 +1,10 @@
+.row5{
+  @include flex;
+  @include flex-flow-row-nowrap;
+  @include justify-content-flex-start;
+  width: 100%;
+}
+.picture_pen{
+  margin-left: calc(43.89% + 5.49%);
+  margin-right: 0.63%;
+}

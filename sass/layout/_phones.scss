@@ -1,0 +1,86 @@
+.phones_content {
+    flex: 1 0 auto;
+    @include flex;
+    @include flex-flow-column;
+    align-items: center;
+    @include margin(8.42%, 18.07%, 0, 18.07%);
+  }
+.phones_content_grid{
+    width: 100%;
+    @include grid;
+    grid-template-columns: 46.84% 53.16%;
+    grid-template-rows: auto auto auto;
+  @media all and (max-width: 700px) {
+      grid-template-columns: 90%;
+      grid-template-rows: auto auto auto auto;
+    }
+    justify-items: stretch;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+
+}
+.phone_picture{
+  grid-column: 1;
+  grid-row: 1/4;
+  width: calc(100% - 12.98%);
+  border: none;
+  margin-right: 12.98%;
+  margin-bottom: 20%;
+  @media all and (max-width: 700px) {
+    grid-row: 1;
+    margin-bottom: 10vh;
+  }
+}
+.first_text{
+    grid-column: 2;
+    grid-row: 1;
+    @include flex;
+    @include flex-flow-row-nowrap;
+    margin-top: 7%;
+  @media all and (max-width: 700px) {
+    grid-column: 1;
+    grid-row: 2;
+    margin-bottom: 5vh;
+  }
+}
+.second_text{
+  grid-column: 2;
+  grid-row: 2;
+  @include flex;
+  @include flex-flow-row-nowrap;
+  @media all and (max-width: 700px) {
+    grid-column: 1;
+    grid-row: 3;
+    margin-bottom: 5vh;
+  }
+}
+.third_text{
+  grid-column: 2;
+  grid-row: 3;
+  @include flex;
+  @include flex-flow-row-nowrap;
+  @media all and (max-width: 700px) {
+    grid-column: 1;
+    grid-row: 4;
+  }
+}
+.mark_wrapper{
+  width: 11.13%;
+  padding-bottom: 11.13%;
+}
+.phone_text_text{
+  margin-top: -4%;
+}
+.third_text_text .phone_text_text{
+  padding-bottom: 12%;
+}
+.button{
+  margin-top: 12%;
+}
+.button a{
+  padding: 4.45% 7.97%;
+  text-decoration: none;
+  border: none;
+  background-color: deeppink;
+}

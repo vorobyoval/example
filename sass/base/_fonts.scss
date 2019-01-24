@@ -1,0 +1,254 @@
+@font-face{
+
+  font-family: 'MyriadProRegular';
+  src: url('../../8143.otf') format('opentype'),
+  url('../../MyriadPro-Regular.woff') format('woff');}
+
+
+body{
+  color: white;
+    a{color: white;
+      text-decoration: none;
+    }
+}
+.wrapper{
+  font-size: 1.3vw;
+  color: white;
+}
+.brandaloka_text{
+  font-size: 4.3vw;
+
+    .pink{
+      color: deeppink;
+    }
+}
+a:visited{
+    color: white;
+}
+/*what we do page*/
+.what_we_do_title{
+  font-size: 1.68vw;
+  color: #777777;
+  line-height: 1.12;
+  @media all and (max-width: 900px){
+    font-size: 2.5vw;
+  }
+  @media all and (max-width: 700px){
+    font-size: 3.4vw;
+  }
+
+    .pink{
+      color: deeppink;
+    }
+}
+.what_we_do_text{
+  font-size: 0.84vw;
+  color: #777777;
+  line-height: 1.68vw;
+  @media all and (max-width: 1000px){
+    font-size: 1.25vw;
+  }
+  @media all and (max-width: 700px){
+    font-size: 1.7vw;
+  }
+  .pink{
+    color: deeppink;
+  }
+}
+.what_we_do_diamonds {
+
+  .pink {
+    color: deeppink;
+  }
+
+  .number {
+    font-size: 2.1vw;
+  }
+
+  .letters {
+    font-size: 0.84vw;
+  }
+}
+.fas{
+  color: deeppink;
+  font-size: 3vw;
+}
+.dropdown_menu{
+  color: deeppink;
+    a{
+      color: deeppink;
+      &:hover{
+        color: deeppink;
+      }
+      &:visited{
+        color: deeppink;
+      }
+    }
+}
+/*About_us*/
+.about_us_content{
+  color: #777777;
+  .pink {
+    color: deeppink;
+  }
+}
+.about_us_title>.title{
+  font-size: 1.68vw;
+     @media all and (max-width: 900px){
+      font-size: 2.5vw;
+  }
+  @media all and (max-width: 700px){
+    font-size: 3.4vw;
+  }
+}
+
+.about_us_title_text, .about_us_center_left_part{
+  font-size: 1.1vw;
+  @media all and (max-width: 1000px){
+    font-size: 1.25vw;
+  }
+  @media all and (max-width: 700px){
+    font-size: 1.7vw;
+  }
+}
+.left_part_button{
+  font-size: 0.84vw;
+  color: white;
+
+   &:hover{
+     color: white;
+   }
+    &:visited{
+      color: white;
+    }
+  @media all and (max-width: 1000px){
+    font-size: 1.25vw;}
+    @media all and (max-width: 1000px){
+      font-size: 1.7vw;
+  }
+}
+ .what_we_do_footer {
+  font-size: 1vw;
+
+  @media all and (max-width: 1000px) {
+    font-size: 1.25vw;
+  }
+  @media all and (max-width: 1000px) {
+    font-size: 1.7vw;
+  }
+}
+/*services page*/
+.services_content_grid{
+  color: #777;
+  .pink{
+    color: deeppink;
+  }
+}
+.services_content_grid_title{
+  font-size: 1.68vw;
+
+}
+.services_content_grid_text{
+  font-size: 1.2vw;
+  line-height: 1.68vw;
+}
+.square_text_title{
+  font-size: 1.2vw;
+}
+.square_text_text{
+  font-size: 1.1vw;
+}
+/*phones page*/
+.square_text_text{
+  font-size: 0.9vw;
+  @media all and (max-width: 900px) {
+    font-size: 1.2vw;
+  }
+  @media all and (max-width: 700px) {
+    font-size: 1.7vw;
+  }
+}
+.button{
+  font-size: 1.1vw;
+  @media all and (max-width: 700px) {
+    font-size: 1.7vw;
+  }
+}
+/*Our_team*/
+.main_title{
+  font-size: 1.68vw;
+    .pink{
+      color: deeppink;
+    }
+    .grey{
+      color: #777777;
+    }
+}
+.position{
+  font-size: 1.1vw;
+  color: #777777;
+}
+.last_posts_title{
+  font-size: 1.68vw;
+    .pink{
+      color: deeppink;
+    }
+    .grey{
+      color: #777777;
+    }
+}
+.last_posts_text{
+  color: #777777;
+  font-size: 1.1vw;
+    a{
+      color: white;
+      &:hover{
+        color: white;
+      }
+      &:visited{
+        color: white;
+      }
+    }
+}
+
+.our_skills_title p{
+  color: #777777;
+  font-size: 1.68vw;
+    .pink{
+      color: deeppink;
+    }
+}
+.figure_circle{
+  font-size: 1.68vw;
+  color: #777777;
+}
+.figure_circle_text{
+  color: #777777;
+  font-size: 1.1vw;
+}
+.our_latest_project_title{
+  font-size: 1.68vw;
+  color: #777777;
+    .pink{
+      color: deeppink;
+    }
+}
+/*form page*/
+.form_title{
+  color: #777777;
+  font-size: 1.68vw;
+    .pink{
+      color: deeppink;
+    }
+}
+.form_text{
+  color: #777777;
+  font-size: 1vw;
+}
+.form_form{
+  color: #777777;
+  font-size: 1.2vw;
+}
+ .form_submit>input{
+  color: white;
+}

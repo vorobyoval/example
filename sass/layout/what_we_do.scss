@@ -1,0 +1,124 @@
+
+.what_we_do_content{
+  flex: 1 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  @include flex-flow-column;
+  align-items: center;
+  @include margin(calc(-1.9% + 12.056%),18.07%,0,18.07%);/*margin-top вначале до верха подобрала значение, затем
+   дописала то, что нужно по расчетам*/
+}
+.what_we_do_text{
+  margin-top: calc(-3.8% + 8.37%);/*подогнала до нулевой границы и поставила нужную*/
+  text-align: center;
+}
+.what_we_do_text p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.what_we_do_diamonds {
+  @include flex;
+  @include flex-flow-row-nowrap;
+  @include justify-content-space-around;
+  width: 100%;
+  margin-top: calc(2.7% + 9.5%);
+  @media all and (max-width: 700px){
+  flex:1 1 200px;
+  -webkit-flex: 1 1 200px;
+  @include flex-flow-column;
+  align-items: center;
+  min-height: 100vh;
+  }
+
+    .what_we_do_first_square{
+      border: inset 2px deeppink;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      @media all and (max-width: 700px){
+        margin-top: 10vh;
+      }
+
+        .what_we_do_first_square_text{
+          @include inner(absolute, 0, 0, 100%, auto);
+          margin-top: 5%;
+          text-align: center;
+          margin-left: 17%;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+
+            .first_letters{
+              margin-top: calc(-60% + 12.28%);
+            }
+            .second_letters{
+              margin-top: calc(-47% + 12.28%);
+            }
+            .third_letters{
+              margin-top: calc(-47% + 12.28%);
+            }
+            .fourth_letters{
+              margin-top: calc(-50% + 12.28%);
+            }
+        }
+    }
+
+
+}
+
+.what_we_do_footer{
+  width: 100%;
+  flex: 0 0 auto;
+  @include flex;
+  @include flex-flow-row-nowrap;
+  margin-top: 15vh;
+  z-index: 20;
+
+  .menu{
+    @include flex;
+    @include flex-flow-row-nowrap;
+    @include justify-content-flex-start;
+    padding: 1rem;
+
+
+      .fas{
+        margin-right: 10%;
+      }
+
+  }
+}
+
+.menu>div{
+  position: relative;
+}
+.dropdown_menu{
+  @include flex;
+  @include flex-flow-row-nowrap;
+  @include justify-content-space-around;
+  max-width: 80vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+    div{
+      width: 12vw;
+      margin-right: 1rem;
+      text-align: left;
+      a{
+        text-align: left;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      padding: 1rem;
+    }
+
+}
+
+.dropdown_menu{
+  display: none;
+}
+ .menu:hover>.dropdown_menu{
+  display: flex;
+}

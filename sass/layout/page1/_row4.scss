@@ -1,0 +1,30 @@
+.row4{
+  @include flex;
+  @include flex-flow-row-nowrap;
+  @include justify-content-flex-start;
+  width: 100%;
+}
+.row4_right-line_wrapper {
+  @include flex;
+  @include wrapper(calc(16.46% - 0.63%),10.97%, relative, center);
+  border-right: inset 1px white;
+}
+.row4_bottom-line_wrapper {
+  @include flex;
+  @include wrapper(calc(10.97% + 0.63% - 1px), calc(16.46% + 0.63%), relative, center);
+  border-bottom: inset 1px white;
+  margin-left: 5.49%;
+}
+.about_us{
+  margin-top: calc(0.63% - 1px);
+  margin-right: 0.63%;
+}
+.row4_bottom-line_wrapper2 {
+  @include flex;
+  @include wrapper(16.46%,16.46%, relative, center);
+  border-bottom: inset 1px white;
+}
+.get_in_touch{
+  margin-bottom: 0.63%;
+  margin-top: -1px;
+}
